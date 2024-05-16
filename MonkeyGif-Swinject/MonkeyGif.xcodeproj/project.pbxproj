@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		451D39262BF5FB7D0097C55E /* ControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39252BF5FB7D0097C55E /* ControllerAssembly.swift */; };
+		451D39282BF5FB9F0097C55E /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 451D39272BF5FB9F0097C55E /* Swinject */; };
+		451D392A2BF5FC510097C55E /* SessionAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39292BF5FC510097C55E /* SessionAssembly.swift */; };
+		451D392B2BF5FC570097C55E /* ControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39252BF5FB7D0097C55E /* ControllerAssembly.swift */; };
+		451D392C2BF5FC5A0097C55E /* SessionAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39292BF5FC510097C55E /* SessionAssembly.swift */; };
+		451D392E2BF5FD4F0097C55E /* RepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D392D2BF5FD4F0097C55E /* RepositoryAssembly.swift */; };
+		451D392F2BF5FD4F0097C55E /* RepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D392D2BF5FD4F0097C55E /* RepositoryAssembly.swift */; };
+		451D39312BF5FE2C0097C55E /* InteractorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39302BF5FE2C0097C55E /* InteractorAssembly.swift */; };
+		451D39322BF5FE2C0097C55E /* InteractorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39302BF5FE2C0097C55E /* InteractorAssembly.swift */; };
+		451D39342BF5FF0C0097C55E /* AppKeysAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39332BF5FF0C0097C55E /* AppKeysAssembly.swift */; };
+		451D39352BF5FF0C0097C55E /* AppKeysAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39332BF5FF0C0097C55E /* AppKeysAssembly.swift */; };
+		451D393E2BF5FFBC0097C55E /* UIEntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D393D2BF5FFBC0097C55E /* UIEntryPoint.swift */; };
+		451D393F2BF5FFBC0097C55E /* UIEntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D393D2BF5FFBC0097C55E /* UIEntryPoint.swift */; };
+		451D39412BF600A00097C55E /* CoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39402BF600A00097C55E /* CoordinatorAssembly.swift */; };
+		451D39422BF600A00097C55E /* CoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39402BF600A00097C55E /* CoordinatorAssembly.swift */; };
+		451D39442BF603210097C55E /* AssembleWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39432BF603210097C55E /* AssembleWrapper.swift */; };
+		451D39452BF603210097C55E /* AssembleWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39432BF603210097C55E /* AssembleWrapper.swift */; };
+		451D394A2BF6193F0097C55E /* AppViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39492BF6193F0097C55E /* AppViewControllerAssembly.swift */; };
+		451D394B2BF6193F0097C55E /* AppViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39492BF6193F0097C55E /* AppViewControllerAssembly.swift */; };
 		8751A1462BAED288009FC688 /* Extension+ URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8751A1452BAED288009FC688 /* Extension+ URLSession.swift */; };
 		8751A1492BAED32F009FC688 /* GetGifByIdMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8751A1482BAED32F009FC688 /* GetGifByIdMock.swift */; };
 		8751A14B2BAED36E009FC688 /* TrendingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8751A14A2BAED36E009FC688 /* TrendingMock.swift */; };
@@ -102,6 +121,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		451D39252BF5FB7D0097C55E /* ControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerAssembly.swift; sourceTree = "<group>"; };
+		451D39292BF5FC510097C55E /* SessionAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionAssembly.swift; sourceTree = "<group>"; };
+		451D392D2BF5FD4F0097C55E /* RepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
+		451D39302BF5FE2C0097C55E /* InteractorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorAssembly.swift; sourceTree = "<group>"; };
+		451D39332BF5FF0C0097C55E /* AppKeysAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeysAssembly.swift; sourceTree = "<group>"; };
+		451D393D2BF5FFBC0097C55E /* UIEntryPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEntryPoint.swift; sourceTree = "<group>"; };
+		451D39402BF600A00097C55E /* CoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorAssembly.swift; sourceTree = "<group>"; };
+		451D39432BF603210097C55E /* AssembleWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssembleWrapper.swift; sourceTree = "<group>"; };
+		451D39492BF6193F0097C55E /* AppViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewControllerAssembly.swift; sourceTree = "<group>"; };
 		8751A1452BAED288009FC688 /* Extension+ URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ URLSession.swift"; sourceTree = "<group>"; };
 		8751A1482BAED32F009FC688 /* GetGifByIdMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGifByIdMock.swift; sourceTree = "<group>"; };
 		8751A14A2BAED36E009FC688 /* TrendingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMock.swift; sourceTree = "<group>"; };
@@ -185,12 +213,53 @@
 			buildActionMask = 2147483647;
 			files = (
 				87F82AB82BAB2F44006C7D06 /* SwiftyGif.xcframework in Frameworks */,
+				451D39282BF5FB9F0097C55E /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		451D39242BF5FB4B0097C55E /* DIModules */ = {
+			isa = PBXGroup;
+			children = (
+				451D39392BF5FF850097C55E /* UiModules */,
+				451D39372BF5FF740097C55E /* CoreModules */,
+				451D39362BF5FF640097C55E /* BusinessModules */,
+				451D39432BF603210097C55E /* AssembleWrapper.swift */,
+			);
+			path = DIModules;
+			sourceTree = "<group>";
+		};
+		451D39362BF5FF640097C55E /* BusinessModules */ = {
+			isa = PBXGroup;
+			children = (
+				451D39252BF5FB7D0097C55E /* ControllerAssembly.swift */,
+				451D39292BF5FC510097C55E /* SessionAssembly.swift */,
+				451D392D2BF5FD4F0097C55E /* RepositoryAssembly.swift */,
+				451D39302BF5FE2C0097C55E /* InteractorAssembly.swift */,
+			);
+			path = BusinessModules;
+			sourceTree = "<group>";
+		};
+		451D39372BF5FF740097C55E /* CoreModules */ = {
+			isa = PBXGroup;
+			children = (
+				451D39332BF5FF0C0097C55E /* AppKeysAssembly.swift */,
+			);
+			path = CoreModules;
+			sourceTree = "<group>";
+		};
+		451D39392BF5FF850097C55E /* UiModules */ = {
+			isa = PBXGroup;
+			children = (
+				451D393D2BF5FFBC0097C55E /* UIEntryPoint.swift */,
+				451D39402BF600A00097C55E /* CoordinatorAssembly.swift */,
+				451D39492BF6193F0097C55E /* AppViewControllerAssembly.swift */,
+			);
+			path = UiModules;
+			sourceTree = "<group>";
+		};
 		8751A1472BAED320009FC688 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +388,7 @@
 		87F82A432BA9B83A006C7D06 /* MonkeyGif */ = {
 			isa = PBXGroup;
 			children = (
+				451D39242BF5FB4B0097C55E /* DIModules */,
 				8751A1472BAED320009FC688 /* Mocks */,
 				87F82A5E2BA9B970006C7D06 /* EnvironmentValues */,
 				87C0F6E32BAC4E0B002D54F9 /* Persistence */,
@@ -525,6 +595,7 @@
 			);
 			name = MonkeyGif;
 			packageProductDependencies = (
+				451D39272BF5FB9F0097C55E /* Swinject */,
 			);
 			productName = MonkeyGif;
 			productReference = 87F82A412BA9B83A006C7D06 /* MonkeyGif.app */;
@@ -538,7 +609,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					879A80252BADD2950057724D = {
 						CreatedOnToolsVersion = 15.3;
@@ -560,6 +631,7 @@
 			mainGroup = 87F82A382BA9B83A006C7D06;
 			packageReferences = (
 				8751A1552BAFF6E2009FC688 /* XCLocalSwiftPackageReference "swift-async-algorithms-1.0.0" */,
+				451D39232BF5F8CB0097C55E /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = 87F82A422BA9B83A006C7D06 /* Products */;
 			projectDirPath = "";
@@ -605,7 +677,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451D39322BF5FE2C0097C55E /* InteractorAssembly.swift in Sources */,
 				879A80292BADD2950057724D /* MonkeyGifTests.swift in Sources */,
+				451D392B2BF5FC570097C55E /* ControllerAssembly.swift in Sources */,
+				451D394B2BF6193F0097C55E /* AppViewControllerAssembly.swift in Sources */,
+				451D39452BF603210097C55E /* AssembleWrapper.swift in Sources */,
+				451D39352BF5FF0C0097C55E /* AppKeysAssembly.swift in Sources */,
+				451D392C2BF5FC5A0097C55E /* SessionAssembly.swift in Sources */,
+				451D39422BF600A00097C55E /* CoordinatorAssembly.swift in Sources */,
+				451D392F2BF5FD4F0097C55E /* RepositoryAssembly.swift in Sources */,
+				451D393F2BF5FFBC0097C55E /* UIEntryPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,12 +697,15 @@
 				87F82A8B2BAABE45006C7D06 /* CollectionDecorator.swift in Sources */,
 				8751A1492BAED32F009FC688 /* GetGifByIdMock.swift in Sources */,
 				87F82A792BA9D139006C7D06 /* GetByIdApi.swift in Sources */,
+				451D392E2BF5FD4F0097C55E /* RepositoryAssembly.swift in Sources */,
 				87C0F6E92BAC565D002D54F9 /* Typealiases.swift in Sources */,
 				87F82AC12BAB428D006C7D06 /* GifRepository.swift in Sources */,
 				87F82A9D2BAB21F9006C7D06 /* Extension+MGGif.swift in Sources */,
 				87F82A622BA9BAAF006C7D06 /* PlistReader.swift in Sources */,
 				87F82A692BA9BC3A006C7D06 /* ApiQueryProtocol.swift in Sources */,
+				451D392A2BF5FC510097C55E /* SessionAssembly.swift in Sources */,
 				8751A14D2BAED3B2009FC688 /* SearchMock.swift in Sources */,
+				451D39342BF5FF0C0097C55E /* AppKeysAssembly.swift in Sources */,
 				8751A19B2BB2BA07009FC688 /* AppViewControllerCoordinator.swift in Sources */,
 				87F82A992BAAD618006C7D06 /* Extension+UIView.swift in Sources */,
 				879A801E2BADA3E10057724D /* Extension+UIViewController.swift in Sources */,
@@ -629,7 +713,9 @@
 				87F82A642BA9BBBE006C7D06 /* TrendingApi.swift in Sources */,
 				8751A1942BB2AFFA009FC688 /* Datum.swift in Sources */,
 				87F82A5D2BA9B8B0006C7D06 /* AppViewController.swift in Sources */,
+				451D393E2BF5FFBC0097C55E /* UIEntryPoint.swift in Sources */,
 				87F82A932BAAC8AD006C7D06 /* GifViewCell.swift in Sources */,
+				451D39262BF5FB7D0097C55E /* ControllerAssembly.swift in Sources */,
 				879A80212BADCEFD0057724D /* FetchingViewModelProtocol.swift in Sources */,
 				87C0F6F02BAC6760002D54F9 /* Extension+UIImage.swift in Sources */,
 				8751A14B2BAED36E009FC688 /* TrendingMock.swift in Sources */,
@@ -640,16 +726,19 @@
 				87C0F6E72BAC50B9002D54F9 /* PlistDecodable.swift in Sources */,
 				87F82A6F2BA9C4D2006C7D06 /* ApiWorkerProtocol.swift in Sources */,
 				87F82ABE2BAB3925006C7D06 /* DecoratorProtocol.swift in Sources */,
+				451D39442BF603210097C55E /* AssembleWrapper.swift in Sources */,
 				87C0F6EC2BAC6544002D54F9 /* GifController.swift in Sources */,
 				87F82A452BA9B83A006C7D06 /* MonkeyGifApp.swift in Sources */,
 				87F82A4C2BA9B83A006C7D06 /* ContentView.swift in Sources */,
 				87F82A712BA9C4E8006C7D06 /* AppError.swift in Sources */,
+				451D39312BF5FE2C0097C55E /* InteractorAssembly.swift in Sources */,
 				8751A1992BB2B9F4009FC688 /* FavoriteViewControllerCoordinator.swift in Sources */,
 				879A801C2BADA1690057724D /* FetchState.swift in Sources */,
 				87C0F6D82BAB4E25002D54F9 /* Extension+UICollectionViewCompositionalLayout.swift in Sources */,
 				8751A1972BB2B187009FC688 /* GiphySceneCoordinator.swift in Sources */,
 				87F82A472BA9B83A006C7D06 /* Persistence.swift in Sources */,
 				87F82ABB2BAB38DE006C7D06 /* SearchControllerDecorator.swift in Sources */,
+				451D394A2BF6193F0097C55E /* AppViewControllerAssembly.swift in Sources */,
 				87F82ACB2BAB4B1F006C7D06 /* FavoriteViewController.swift in Sources */,
 				87F82A732BA9C4FF006C7D06 /* SearchQueryApi.swift in Sources */,
 				87C0F6E02BAC1BA4002D54F9 /* FavoriteDecoratorProtocol.swift in Sources */,
@@ -661,6 +750,7 @@
 				87C0F6DE2BAC1B2F002D54F9 /* FavoriteControllerViewModel.swift in Sources */,
 				87F82A6C2BA9BDE1006C7D06 /* GiphyData.swift in Sources */,
 				8751A1922BB2AFD6009FC688 /* GifyFetchedData.swift in Sources */,
+				451D39412BF600A00097C55E /* CoordinatorAssembly.swift in Sources */,
 				87F82AC62BAB42C4006C7D06 /* AppViewControllerViewModel.swift in Sources */,
 				87C0F70B2BAD6EC1002D54F9 /* Texts.swift in Sources */,
 				87CE62F82BBBFE3D00C0B246 /* EmptyContentCell.swift in Sources */,
@@ -693,6 +783,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.MonkeyGifTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -714,6 +807,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.MonkeyGifTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -735,6 +831,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.MonkeyGifTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -777,6 +876,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -812,6 +912,7 @@
 				CODE_SIGN_ENTITLEMENTS = MonkeyGif/MonkeyGif.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MonkeyGif/Preview Content\"";
 				DEVELOPMENT_TEAM = STFH26U9BW;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -857,6 +958,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.MonkeyGifTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -899,6 +1003,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -934,6 +1039,7 @@
 				CODE_SIGN_ENTITLEMENTS = MonkeyGif/MonkeyGif.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MonkeyGif/Preview Content\"";
 				DEVELOPMENT_TEAM = STFH26U9BW;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1000,6 +1106,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1061,6 +1168,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1089,6 +1197,7 @@
 				CODE_SIGN_ENTITLEMENTS = MonkeyGif/MonkeyGif.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MonkeyGif/Preview Content\"";
 				DEVELOPMENT_TEAM = STFH26U9BW;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1129,6 +1238,7 @@
 				CODE_SIGN_ENTITLEMENTS = MonkeyGif/MonkeyGif.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MonkeyGif/Preview Content\"";
 				DEVELOPMENT_TEAM = STFH26U9BW;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1204,6 +1314,25 @@
 			relativePath = "swift-async-algorithms-1.0.0";
 		};
 /* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		451D39232BF5F8CB0097C55E /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		451D39272BF5FB9F0097C55E /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 451D39232BF5F8CB0097C55E /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		87F82A482BA9B83A006C7D06 /* MonkeyGif.xcdatamodeld */ = {

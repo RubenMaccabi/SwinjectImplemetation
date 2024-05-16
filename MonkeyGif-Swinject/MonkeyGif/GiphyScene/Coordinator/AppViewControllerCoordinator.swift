@@ -11,7 +11,7 @@ import UIKit
 class AppViewControllerCoordinator: GiphySceneCoordinator {
     
     weak var parent: GiphySceneCoordinator?
-    let navigationController: UINavigationController
+    var navigationController: UINavigationController
     let apiKey: String
     let apiInteractor: ApiInteractorProtocol
     

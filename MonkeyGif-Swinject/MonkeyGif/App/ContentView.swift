@@ -9,11 +9,10 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    
-    let apiKey: String
+        @Environment(AssembleWrapper.self) var assemble
     
     var body: some View {
-        AppRepresentable(apiKey: apiKey)
+        AppRepresentable(assemble:  assemble)
             .ignoresSafeArea()
             .preferredColorScheme(.dark)
     }
@@ -21,16 +20,10 @@ struct ContentView: View {
 
 struct AppRepresentable: UIViewControllerRepresentable {
     
-    let apiKey: String
+    let assemble: AssembleWrapper
     
     func makeUIViewController(context: Context) -> some UIViewController {
-        let controller: GifControllerProtocol = GifController(controller: .shared)
-        let repository: GifRepositoryProtocol = GifRepository(controller: controller, urlSession: .envSession)
-        let interactor: ApiInteractorProtocol = ApiInteractor(repository: repository)
-        let navController = UINavigationController()
-        let appViewCoordinator = AppViewControllerCoordinator(navigationController: navController, apiKey: apiKey, apiInteractor: interactor)
-        appViewCoordinator.start()
-        return navController
+        return assemble.startApp()
     }
     
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
@@ -39,8 +32,5 @@ struct AppRepresentable: UIViewControllerRepresentable {
 }
 
 #Preview {
-    let reader = PlistReader(keyList: .appKeys)
-    let appKeys: AppKeys = reader.read()
-    return ContentView(apiKey: appKeys.giphyApi)
-        .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    ContentView()
 }

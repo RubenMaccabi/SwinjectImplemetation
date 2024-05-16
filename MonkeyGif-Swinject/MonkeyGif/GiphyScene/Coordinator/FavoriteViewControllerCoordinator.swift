@@ -23,7 +23,7 @@ class FavoriteViewControllerCoordinator: GiphySceneCoordinator {
         parent?.dismiss()
     }
     
-    func start() {
+    func start()  {
         let favoriteVC = FavoriteViewController(viewModel: .init(viewContext: PersistenceController.shared.container.viewContext), coordinator: self)
         let vc = UINavigationController(rootViewController: favoriteVC)
         navigationController.present(vc, animated: true)

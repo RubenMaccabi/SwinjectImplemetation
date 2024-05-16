@@ -10,19 +10,32 @@ import SwiftUI
 @main
 struct MonkeyGifApp: App {
     
-    let apiKey: String
-    let persistenceController = PersistenceController.shared
-    
-    init() {
-        let reader = PlistReader(keyList: .appKeys)
-        let appKeys: AppKeys = reader.read()
-        self.apiKey = appKeys.giphyApi
-    }
+    @UIApplicationDelegateAdaptor var appDelegate: AppDelegate
 
     var body: some Scene {
         WindowGroup {
-            ContentView(apiKey: apiKey)
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+           ContentView()
+                .environment(appDelegate.assemblerWrapper)
         }
+    }
+}
+
+@Observable
+class AppDelegate: NSObject, UIApplicationDelegate, UIEntryPoint {
+    
+    var assemblerWrapper: AssembleWrapper?
+    var window: UIWindow?    
+    
+    var rootViewController: UIViewController? {
+        get { nil }
+        set {
+            self.window?.rootViewController = newValue
+            self.window?.makeKeyAndVisible()
+        }
+    }
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        assemblerWrapper = .init(uiEntryPoint: self)
+        return true
     }
 }
