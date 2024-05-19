@@ -18,7 +18,8 @@ class ControllerAssembly: Assembly {
         .inObjectScope(.container)
         
         container.register(GifControllerProtocol.self) { r in
-                GifController(controller: r.resolve(PersistenceController.self)!)
+            GifController(controller: r.resolve(PersistenceController.self)!)
         }
+        .inObjectScope(.weak)
     }
 }

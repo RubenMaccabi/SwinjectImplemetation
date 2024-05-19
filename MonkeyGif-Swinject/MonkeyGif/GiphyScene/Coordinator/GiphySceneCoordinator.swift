@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 
 protocol GiphySceneCoordinator: AnyObject {
-    var parent: GiphySceneCoordinator? { get set}
     var navigationController: UINavigationController { get }
+    var children: [GiphySceneCoordinator] { get set }
     func dismiss()
     func start()
 }

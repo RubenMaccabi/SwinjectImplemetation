@@ -18,6 +18,7 @@ class RepositoryAssembly: Assembly {
             assert(session != nil, "URLSession not injected")
             return GifRepository(controller: controller!, urlSession: session!)
         }
+        .inObjectScope(.weak)
     }
     
 }

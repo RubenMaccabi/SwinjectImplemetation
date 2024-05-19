@@ -8,14 +8,15 @@
 import UIKit
 import Combine
 
-class FavoriteViewController: UIViewController, ViewControllerProtocol, CollectionFavoriteProtocol {
+final class FavoriteViewController: UIViewController, ViewControllerProtocol, CollectionFavoriteProtocol {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private let viewModel: FavoriteViewControllerViewModel
     private var subscriptions: Set<AnyCancellable> = .init()
-    let coordinator: FavoriteViewControllerCoordinator
     
+    var coordinator: FavoriteViewControllerCoordinator
+    var viewModel: FavoriteViewControllerViewModel
+
     lazy var favoriteDecorator: FavoriteDecoratorProtocol = {
         FavoriteDecoratorProtocol(holder: self)
     }()
@@ -29,6 +30,10 @@ class FavoriteViewController: UIViewController, ViewControllerProtocol, Collecti
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    static func build(coordinator: FavoriteViewControllerCoordinator, viewModel: FavoriteViewControllerViewModel) -> FavoriteViewController {
+        FavoriteViewController(viewModel: viewModel, coordinator: coordinator)
     }
     
     override func viewDidLoad() {

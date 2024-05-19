@@ -10,22 +10,22 @@ import UIKit
 
 class FavoriteViewControllerCoordinator: GiphySceneCoordinator {
     
-    weak var parent: GiphySceneCoordinator?
+    var children: [any GiphySceneCoordinator]
     let navigationController: UINavigationController
+    let favoriteVM: FavoriteViewController.ViewModel
     
-    init(parent: GiphySceneCoordinator?, navigationController: UINavigationController) {
-        self.parent = parent
+    init(navigationController: UINavigationController, favoriteVM: FavoriteViewController.ViewModel) {
         self.navigationController = navigationController
+        self.children = []
+        self.favoriteVM = favoriteVM
     }
     
     func dismiss() {
-        precondition(parent != nil, "Favorite view condtroller must have a parent")
-        parent?.dismiss()
+        navigationController.dismiss(animated: true)
     }
     
     func start()  {
-        let favoriteVC = FavoriteViewController(viewModel: .init(viewContext: PersistenceController.shared.container.viewContext), coordinator: self)
-        let vc = UINavigationController(rootViewController: favoriteVC)
-        navigationController.present(vc, animated: true)
+        let favoriteVC = FavoriteViewController(viewModel: favoriteVM, coordinator: self)
+        navigationController.present(UINavigationController(rootViewController: favoriteVC), animated: true)
     }
 }

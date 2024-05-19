@@ -16,5 +16,6 @@ class AppKeysAssembly: Assembly {
             let appKeys: AppKeys = reader.read()
             return appKeys
         }
+        .inObjectScope(.container)
     }
 }

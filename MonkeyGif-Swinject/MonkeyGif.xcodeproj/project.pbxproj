@@ -26,6 +26,20 @@
 		451D39452BF603210097C55E /* AssembleWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39432BF603210097C55E /* AssembleWrapper.swift */; };
 		451D394A2BF6193F0097C55E /* AppViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39492BF6193F0097C55E /* AppViewControllerAssembly.swift */; };
 		451D394B2BF6193F0097C55E /* AppViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39492BF6193F0097C55E /* AppViewControllerAssembly.swift */; };
+		451D394D2BF628350097C55E /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D394C2BF628350097C55E /* ViewControllerFactory.swift */; };
+		451D394E2BF628350097C55E /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D394C2BF628350097C55E /* ViewControllerFactory.swift */; };
+		451D39512BF632150097C55E /* ViewControllerFactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39502BF632150097C55E /* ViewControllerFactoryAssembly.swift */; };
+		451D39522BF632150097C55E /* ViewControllerFactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39502BF632150097C55E /* ViewControllerFactoryAssembly.swift */; };
+		451D39542BF639F10097C55E /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39532BF639F10097C55E /* ViewModelFactory.swift */; };
+		451D39552BF639F10097C55E /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39532BF639F10097C55E /* ViewModelFactory.swift */; };
+		451D39582BF63BE60097C55E /* ViewModelFactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39572BF63BE60097C55E /* ViewModelFactoryAssembly.swift */; };
+		451D39592BF63BE60097C55E /* ViewModelFactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39572BF63BE60097C55E /* ViewModelFactoryAssembly.swift */; };
+		451D395B2BF63C820097C55E /* ViewModelsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D395A2BF63C820097C55E /* ViewModelsAssembly.swift */; };
+		451D395C2BF63C820097C55E /* ViewModelsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D395A2BF63C820097C55E /* ViewModelsAssembly.swift */; };
+		451D39642BF9D2020097C55E /* FavoriteViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39632BF9D2020097C55E /* FavoriteViewControllerAssembly.swift */; };
+		451D39652BF9D2020097C55E /* FavoriteViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39632BF9D2020097C55E /* FavoriteViewControllerAssembly.swift */; };
+		451D39672BF9D7C70097C55E /* RootNavigationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39662BF9D7C70097C55E /* RootNavigationAssembly.swift */; };
+		451D39682BF9D7C70097C55E /* RootNavigationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39662BF9D7C70097C55E /* RootNavigationAssembly.swift */; };
 		8751A1462BAED288009FC688 /* Extension+ URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8751A1452BAED288009FC688 /* Extension+ URLSession.swift */; };
 		8751A1492BAED32F009FC688 /* GetGifByIdMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8751A1482BAED32F009FC688 /* GetGifByIdMock.swift */; };
 		8751A14B2BAED36E009FC688 /* TrendingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8751A14A2BAED36E009FC688 /* TrendingMock.swift */; };
@@ -130,6 +144,13 @@
 		451D39402BF600A00097C55E /* CoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorAssembly.swift; sourceTree = "<group>"; };
 		451D39432BF603210097C55E /* AssembleWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssembleWrapper.swift; sourceTree = "<group>"; };
 		451D39492BF6193F0097C55E /* AppViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewControllerAssembly.swift; sourceTree = "<group>"; };
+		451D394C2BF628350097C55E /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		451D39502BF632150097C55E /* ViewControllerFactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryAssembly.swift; sourceTree = "<group>"; };
+		451D39532BF639F10097C55E /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
+		451D39572BF63BE60097C55E /* ViewModelFactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactoryAssembly.swift; sourceTree = "<group>"; };
+		451D395A2BF63C820097C55E /* ViewModelsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelsAssembly.swift; sourceTree = "<group>"; };
+		451D39632BF9D2020097C55E /* FavoriteViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerAssembly.swift; sourceTree = "<group>"; };
+		451D39662BF9D7C70097C55E /* RootNavigationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationAssembly.swift; sourceTree = "<group>"; };
 		8751A1452BAED288009FC688 /* Extension+ URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ URLSession.swift"; sourceTree = "<group>"; };
 		8751A1482BAED32F009FC688 /* GetGifByIdMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGifByIdMock.swift; sourceTree = "<group>"; };
 		8751A14A2BAED36E009FC688 /* TrendingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMock.swift; sourceTree = "<group>"; };
@@ -220,15 +241,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		451D39242BF5FB4B0097C55E /* DIModules */ = {
+		451D39242BF5FB4B0097C55E /* DI */ = {
 			isa = PBXGroup;
 			children = (
-				451D39392BF5FF850097C55E /* UiModules */,
-				451D39372BF5FF740097C55E /* CoreModules */,
-				451D39362BF5FF640097C55E /* BusinessModules */,
+				451D39612BF9CBE20097C55E /* Modules */,
+				451D394F2BF631FC0097C55E /* Factories */,
 				451D39432BF603210097C55E /* AssembleWrapper.swift */,
 			);
-			path = DIModules;
+			path = DI;
 			sourceTree = "<group>";
 		};
 		451D39362BF5FF640097C55E /* BusinessModules */ = {
@@ -253,11 +273,51 @@
 		451D39392BF5FF850097C55E /* UiModules */ = {
 			isa = PBXGroup;
 			children = (
+				451D39622BF9CC770097C55E /* ViewControllers */,
 				451D393D2BF5FFBC0097C55E /* UIEntryPoint.swift */,
 				451D39402BF600A00097C55E /* CoordinatorAssembly.swift */,
-				451D39492BF6193F0097C55E /* AppViewControllerAssembly.swift */,
+				451D39662BF9D7C70097C55E /* RootNavigationAssembly.swift */,
 			);
 			path = UiModules;
+			sourceTree = "<group>";
+		};
+		451D394F2BF631FC0097C55E /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				451D39502BF632150097C55E /* ViewControllerFactoryAssembly.swift */,
+				451D394C2BF628350097C55E /* ViewControllerFactory.swift */,
+				451D39532BF639F10097C55E /* ViewModelFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		451D39562BF63BCA0097C55E /* ViewModelModules */ = {
+			isa = PBXGroup;
+			children = (
+				451D39572BF63BE60097C55E /* ViewModelFactoryAssembly.swift */,
+				451D395A2BF63C820097C55E /* ViewModelsAssembly.swift */,
+			);
+			path = ViewModelModules;
+			sourceTree = "<group>";
+		};
+		451D39612BF9CBE20097C55E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				451D39562BF63BCA0097C55E /* ViewModelModules */,
+				451D39392BF5FF850097C55E /* UiModules */,
+				451D39372BF5FF740097C55E /* CoreModules */,
+				451D39362BF5FF640097C55E /* BusinessModules */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		451D39622BF9CC770097C55E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				451D39492BF6193F0097C55E /* AppViewControllerAssembly.swift */,
+				451D39632BF9D2020097C55E /* FavoriteViewControllerAssembly.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		8751A1472BAED320009FC688 /* Mocks */ = {
@@ -388,7 +448,7 @@
 		87F82A432BA9B83A006C7D06 /* MonkeyGif */ = {
 			isa = PBXGroup;
 			children = (
-				451D39242BF5FB4B0097C55E /* DIModules */,
+				451D39242BF5FB4B0097C55E /* DI */,
 				8751A1472BAED320009FC688 /* Mocks */,
 				87F82A5E2BA9B970006C7D06 /* EnvironmentValues */,
 				87C0F6E32BAC4E0B002D54F9 /* Persistence */,
@@ -502,19 +562,11 @@
 		87F82A892BAABE25006C7D06 /* AppViewController */ = {
 			isa = PBXGroup;
 			children = (
-				87F82A8F2BAAC882006C7D06 /* Views */,
 				87F82A5A2BA9B8B0006C7D06 /* AppViewController.swift */,
 				87F82A5B2BA9B8B0006C7D06 /* AppViewController.xib */,
 				87F82AC52BAB42C4006C7D06 /* AppViewControllerViewModel.swift */,
 			);
 			path = AppViewController;
-			sourceTree = "<group>";
-		};
-		87F82A8F2BAAC882006C7D06 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		87F82A942BAAC8B7006C7D06 /* GifViewCell */ = {
@@ -677,16 +729,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451D395C2BF63C820097C55E /* ViewModelsAssembly.swift in Sources */,
 				451D39322BF5FE2C0097C55E /* InteractorAssembly.swift in Sources */,
+				451D39552BF639F10097C55E /* ViewModelFactory.swift in Sources */,
+				451D39592BF63BE60097C55E /* ViewModelFactoryAssembly.swift in Sources */,
 				879A80292BADD2950057724D /* MonkeyGifTests.swift in Sources */,
+				451D39522BF632150097C55E /* ViewControllerFactoryAssembly.swift in Sources */,
 				451D392B2BF5FC570097C55E /* ControllerAssembly.swift in Sources */,
 				451D394B2BF6193F0097C55E /* AppViewControllerAssembly.swift in Sources */,
 				451D39452BF603210097C55E /* AssembleWrapper.swift in Sources */,
 				451D39352BF5FF0C0097C55E /* AppKeysAssembly.swift in Sources */,
 				451D392C2BF5FC5A0097C55E /* SessionAssembly.swift in Sources */,
+				451D39682BF9D7C70097C55E /* RootNavigationAssembly.swift in Sources */,
 				451D39422BF600A00097C55E /* CoordinatorAssembly.swift in Sources */,
 				451D392F2BF5FD4F0097C55E /* RepositoryAssembly.swift in Sources */,
 				451D393F2BF5FFBC0097C55E /* UIEntryPoint.swift in Sources */,
+				451D39652BF9D2020097C55E /* FavoriteViewControllerAssembly.swift in Sources */,
+				451D394E2BF628350097C55E /* ViewControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +754,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87F82A8B2BAABE45006C7D06 /* CollectionDecorator.swift in Sources */,
+				451D395B2BF63C820097C55E /* ViewModelsAssembly.swift in Sources */,
 				8751A1492BAED32F009FC688 /* GetGifByIdMock.swift in Sources */,
 				87F82A792BA9D139006C7D06 /* GetByIdApi.swift in Sources */,
 				451D392E2BF5FD4F0097C55E /* RepositoryAssembly.swift in Sources */,
@@ -715,6 +775,7 @@
 				87F82A5D2BA9B8B0006C7D06 /* AppViewController.swift in Sources */,
 				451D393E2BF5FFBC0097C55E /* UIEntryPoint.swift in Sources */,
 				87F82A932BAAC8AD006C7D06 /* GifViewCell.swift in Sources */,
+				451D39672BF9D7C70097C55E /* RootNavigationAssembly.swift in Sources */,
 				451D39262BF5FB7D0097C55E /* ControllerAssembly.swift in Sources */,
 				879A80212BADCEFD0057724D /* FetchingViewModelProtocol.swift in Sources */,
 				87C0F6F02BAC6760002D54F9 /* Extension+UIImage.swift in Sources */,
@@ -747,13 +808,18 @@
 				87C0F6DA2BAB4E8D002D54F9 /* Extension+CollectionView.swift in Sources */,
 				87F82A752BA9C5D9006C7D06 /* SearchQuery.swift in Sources */,
 				87F82A772BA9CA48006C7D06 /* GetByIdQuery.swift in Sources */,
+				451D39542BF639F10097C55E /* ViewModelFactory.swift in Sources */,
 				87C0F6DE2BAC1B2F002D54F9 /* FavoriteControllerViewModel.swift in Sources */,
+				451D39512BF632150097C55E /* ViewControllerFactoryAssembly.swift in Sources */,
 				87F82A6C2BA9BDE1006C7D06 /* GiphyData.swift in Sources */,
 				8751A1922BB2AFD6009FC688 /* GifyFetchedData.swift in Sources */,
 				451D39412BF600A00097C55E /* CoordinatorAssembly.swift in Sources */,
+				451D394D2BF628350097C55E /* ViewControllerFactory.swift in Sources */,
+				451D39582BF63BE60097C55E /* ViewModelFactoryAssembly.swift in Sources */,
 				87F82AC62BAB42C4006C7D06 /* AppViewControllerViewModel.swift in Sources */,
 				87C0F70B2BAD6EC1002D54F9 /* Texts.swift in Sources */,
 				87CE62F82BBBFE3D00C0B246 /* EmptyContentCell.swift in Sources */,
+				451D39642BF9D2020097C55E /* FavoriteViewControllerAssembly.swift in Sources */,
 				87F82AC42BAB42AB006C7D06 /* ApiInteractor.swift in Sources */,
 				87AC31622BBBD1D300352F26 /* Extension+Array<GifData>.swift in Sources */,
 			);

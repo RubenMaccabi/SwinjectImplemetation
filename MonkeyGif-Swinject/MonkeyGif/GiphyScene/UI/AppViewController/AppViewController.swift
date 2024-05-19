@@ -8,15 +8,17 @@
 import UIKit
 import Combine
 
-class AppViewController: UIViewController, UISearchResultsUpdating, ViewControllerProtocol, CollectionRequestProtocol {
+final class AppViewController: UIViewController, UISearchResultsUpdating, ViewControllerProtocol, CollectionRequestProtocol {
+
+    typealias Coordinator = AppViewControllerCoordinator
+    typealias ViewModel = AppViewControllerViewModel
                 
-    
     @IBOutlet var collectionView: UICollectionView!
-    private let viewModel: AppViewControllerViewModel
     private var subscriptions: Set<AnyCancellable>
-    let coordinator: AppViewControllerCoordinator
     
-    
+    var coordinator: AppViewControllerCoordinator
+    var viewModel: AppViewControllerViewModel
+
     lazy var collectionDecorator: CollectionDecorator = {
         CollectionDecorator(holder: self)
     }()
@@ -31,10 +33,10 @@ class AppViewController: UIViewController, UISearchResultsUpdating, ViewControll
         }
     }
     
-    init(viewModel: AppViewControllerViewModel, coordinator: Coordinator) {
+    init(viewModel: ViewModel, coordinator: Coordinator) {
         self.viewModel = viewModel
-        self.subscriptions = .init()
         self.coordinator = coordinator
+        self.subscriptions = .init()
         super.init(nibName: String(describing: Self.self), bundle: .main)
     }
     
@@ -51,6 +53,10 @@ class AppViewController: UIViewController, UISearchResultsUpdating, ViewControll
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewModel.updateTrendingScroll()
+    }
+    
+    static func build(coordinator: AppViewControllerCoordinator, viewModel: AppViewControllerViewModel) -> AppViewController {
+        AppViewController.init(viewModel: viewModel, coordinator: coordinator)
     }
 
     func updateSearchResults(for searchController: UISearchController) {

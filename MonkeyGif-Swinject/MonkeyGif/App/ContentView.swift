@@ -12,22 +12,9 @@ struct ContentView: View {
         @Environment(AssembleWrapper.self) var assemble
     
     var body: some View {
-        AppRepresentable(assemble:  assemble)
+        assemble.startApp()
             .ignoresSafeArea()
             .preferredColorScheme(.dark)
-    }
-}
-
-struct AppRepresentable: UIViewControllerRepresentable {
-    
-    let assemble: AssembleWrapper
-    
-    func makeUIViewController(context: Context) -> some UIViewController {
-        return assemble.startApp()
-    }
-    
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        
     }
 }
 

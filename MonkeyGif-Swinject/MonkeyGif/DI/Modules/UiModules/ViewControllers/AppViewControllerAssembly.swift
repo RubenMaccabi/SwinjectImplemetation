@@ -17,12 +17,12 @@ class AppViewControllerAssembly: Assembly {
             let appKeys = r.resolve(AppKeys.self)
             return AppViewControllerViewModel(apiKey: appKeys!.giphyApi, interactor: interactor!)
         }
+        .inObjectScope(.weak)
         
         container.register(AppViewController.self) { r in
-            let vm = r.resolve(AppViewControllerViewModel.self)
-            let coordinator = r.resolve(GiphySceneCoordinator.self)
-            return AppViewController(viewModel: vm!, coordinator: coordinator as! AppViewControllerCoordinator)
+            let vm = r.resolve(AppViewController.ViewModel.self)
+            let coordinator = r.resolve(AppViewController.Coordinator.self)
+            return AppViewController(viewModel: vm!, coordinator: coordinator!)
         }
     }
-    
 }
