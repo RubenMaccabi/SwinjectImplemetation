@@ -11,8 +11,9 @@ import UIKit
 class FavoriteViewControllerCoordinator: GiphySceneCoordinator {
     
     var children: [any GiphySceneCoordinator]
-    let navigationController: UINavigationController
-    let favoriteVM: FavoriteViewController.ViewModel
+    internal let navigationController: UINavigationController
+    private let favoriteVM: FavoriteViewController.ViewModel
+    var viewController: UIViewController!
     
     init(navigationController: UINavigationController, favoriteVM: FavoriteViewController.ViewModel) {
         self.navigationController = navigationController
@@ -25,7 +26,6 @@ class FavoriteViewControllerCoordinator: GiphySceneCoordinator {
     }
     
     func start()  {
-        let favoriteVC = FavoriteViewController(viewModel: favoriteVM, coordinator: self)
-        navigationController.present(UINavigationController(rootViewController: favoriteVC), animated: true)
+        navigationController.present(UINavigationController(rootViewController: viewController), animated: true)
     }
 }

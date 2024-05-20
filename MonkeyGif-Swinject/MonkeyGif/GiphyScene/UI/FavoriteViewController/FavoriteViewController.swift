@@ -14,8 +14,8 @@ final class FavoriteViewController: UIViewController, ViewControllerProtocol, Co
     
     private var subscriptions: Set<AnyCancellable> = .init()
     
-    var coordinator: FavoriteViewControllerCoordinator
-    var viewModel: FavoriteViewControllerViewModel
+    let coordinator: FavoriteViewControllerCoordinator
+    let viewModel: FavoriteViewControllerViewModel
 
     lazy var favoriteDecorator: FavoriteDecoratorProtocol = {
         FavoriteDecoratorProtocol(holder: self)

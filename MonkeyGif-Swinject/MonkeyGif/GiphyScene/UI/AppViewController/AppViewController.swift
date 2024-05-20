@@ -16,8 +16,8 @@ final class AppViewController: UIViewController, UISearchResultsUpdating, ViewCo
     @IBOutlet var collectionView: UICollectionView!
     private var subscriptions: Set<AnyCancellable>
     
-    var coordinator: AppViewControllerCoordinator
-    var viewModel: AppViewControllerViewModel
+    let coordinator: AppViewControllerCoordinator
+    let viewModel: AppViewControllerViewModel
 
     lazy var collectionDecorator: CollectionDecorator = {
         CollectionDecorator(holder: self)

@@ -8,14 +8,17 @@
 import Foundation
 import Swinject
 
-final class FavoriteViewModelAssembly: Assembly {
+final class FavoriteViewControllerAssembly: Assembly {
 
     func assemble(container: Container) {
-        container.register(FavoriteViewControllerViewModel.self) { r in
-            let controller = r.resolve(PersistenceController.self)!
-            return FavoriteViewControllerViewModel(viewContext: controller.container.viewContext)
+        container.register(FavoriteViewController.self) { r in
+            let vm = r.resolve((any FetchingViewModelProtocol).self, name: FavoriteViewController.name) as? FavoriteViewController.ViewModel
+            assert(vm != nil,"\(FavoriteViewController.ViewModel.self) is not injected" )
+            let coordinator = r.resolve(GiphySceneCoordinator.self, name: FavoriteViewController.name) as? FavoriteViewController.Coordinator
+            assert(coordinator != nil,"\(FavoriteViewController.Coordinator.self) is not injected" )
+            return FavoriteViewController(viewModel: vm!, coordinator: coordinator!)
         }
-        .inObjectScope(.weak)
+        .inObjectScope(.graph)
     }
 }
 

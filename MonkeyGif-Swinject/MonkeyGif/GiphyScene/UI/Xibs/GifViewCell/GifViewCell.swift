@@ -21,12 +21,12 @@ class GifViewCell: UICollectionViewCell {
     func setup(gifData : GifData) {
         let loader = UIActivityIndicatorView()
         loader.style = .medium
-        self.gifImageView.setGifFromURL(gifData.url, customLoader: loader)
+        self.gifImageView.setGifFromURL(gifData.url, loopCount: 5, customLoader: loader)
     }
     
     override func prepareForReuse() {
-        super.prepareForReuse()
         self.gifImageView.image = nil
+        super.prepareForReuse()
     }
 }
 

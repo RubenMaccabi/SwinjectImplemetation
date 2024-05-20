@@ -12,22 +12,20 @@ class AppViewControllerCoordinator: GiphySceneCoordinator {
     
     weak var parent: GiphySceneCoordinator?
     var children: [GiphySceneCoordinator]
-    var navigationController: UINavigationController
+    let navigationController: UINavigationController
     let appKeys: AppKeys
     let apiInteractor: ApiInteractorProtocol
-    let factory: ViewControllerFactory
+    var viewController: UIViewController!
     
     init(navigationController: UINavigationController,
          appKeys: AppKeys,
          apiInteractor: ApiInteractorProtocol,
-         factory: ViewControllerFactory,
          children: [GiphySceneCoordinator]) {
         self.parent = nil
         self.appKeys = appKeys
         self.children = children
         self.navigationController = navigationController
         self.apiInteractor = apiInteractor
-        self.factory = factory
     }
     
     func dismiss() {
@@ -35,8 +33,7 @@ class AppViewControllerCoordinator: GiphySceneCoordinator {
     }
     
     func start() {
-        let appViewController: AppViewController = factory.makeAppViewController(vm: .init(apiKey: appKeys.giphyApi, interactor: apiInteractor), coordinator: self)
-        navigationController.setViewControllers([appViewController], animated: true)
+        navigationController.setViewControllers([viewController], animated: true)
     }
     
     func showFavorites() {

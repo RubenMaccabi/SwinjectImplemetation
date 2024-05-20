@@ -20,10 +20,9 @@ func buildDI() -> DiBuilder {
         .add(ViewControllerFactoryAssembly())
     // MARK: - ViewModels
         .add(ViewModelsAssembly())
-        .add(FavoriteViewModelAssembly())
     // MARK: - ViewControllers
         .add(AppViewControllerAssembly())
-        .add(FavoriteViewModelAssembly())
+        .add(FavoriteViewControllerAssembly())
     // MARK: - Businness
         .add(AppViewControllerAssembly())
         .add(InteractorAssembly())
@@ -32,7 +31,7 @@ func buildDI() -> DiBuilder {
     // MARK: - Routes
         .add(CoordinatorAssembly())
         .makeAssembler { di in
-            let coordinator = di.resolve(GiphySceneCoordinator.self)
+            let coordinator = di.resolve(GiphySceneCoordinator.self, name: AppViewController.name)
             coordinator.start()
             return coordinator.navigationController
         }

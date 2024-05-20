@@ -10,8 +10,8 @@ import Foundation
 protocol ViewControllerProtocol: AnyObject {
     associatedtype Coordinator: GiphySceneCoordinator
     associatedtype ViewModel: FetchingViewModelProtocol
-    var coordinator: Coordinator { get set }
-    var viewModel: ViewModel { get set }
+    var coordinator: Coordinator { get }
+    var viewModel: ViewModel { get }
     func setupUI()
     func observeDataChanges()
     static func build(coordinator: Coordinator, viewModel: ViewModel) -> Self

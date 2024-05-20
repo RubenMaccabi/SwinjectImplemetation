@@ -11,7 +11,7 @@ import DIWrapper
 
 struct ContentView: View {
     
-    @EnvironmentObject var delegate: AppDelegate
+    @EnvironmentObject private var delegate: AppDelegate
 
     var body: some View {
         delegate.start()

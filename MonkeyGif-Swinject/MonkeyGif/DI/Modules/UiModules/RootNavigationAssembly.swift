@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Swinject
+import DIWrapper
 
 final class RootNavigationAssembly: Assembly {
     

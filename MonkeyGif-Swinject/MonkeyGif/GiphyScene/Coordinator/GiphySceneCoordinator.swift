@@ -10,6 +10,7 @@ import UIKit
 
 protocol GiphySceneCoordinator: AnyObject {
     var navigationController: UINavigationController { get }
+    var viewController: UIViewController! { get set}
     var children: [GiphySceneCoordinator] { get set }
     func dismiss()
     func start()

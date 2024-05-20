@@ -16,5 +16,6 @@ final class InteractorAssembly: Assembly {
             assert(repository != nil, "ApiInteractorProtocol not injected")
             return ApiInteractor(repository: repository!)
         }
+        .inObjectScope(.weak)
     }
 }
