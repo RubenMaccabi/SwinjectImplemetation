@@ -8,7 +8,7 @@
 import Foundation
 import Swinject
 
-class RepositoryAssembly: Assembly {
+final class RepositoryAssembly: Assembly {
     
     func assemble(container: Container) {
         container.register(GifRepositoryProtocol.self) { r in

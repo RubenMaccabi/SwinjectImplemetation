@@ -7,17 +7,21 @@
 
 import SwiftUI
 import CoreData
+import DIWrapper
 
 struct ContentView: View {
-        @Environment(AssembleWrapper.self) var assemble
     
+    @EnvironmentObject var delegate: AppDelegate
+
     var body: some View {
-        assemble.startApp()
+        delegate.start()
             .ignoresSafeArea()
             .preferredColorScheme(.dark)
     }
 }
 
 #Preview {
-    ContentView()
+    @UIApplicationDelegateAdaptor var appDelegate: AppDelegate
+    return ContentView()
+        .environmentObject(appDelegate)
 }

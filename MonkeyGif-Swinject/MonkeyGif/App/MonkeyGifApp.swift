@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DIWrapper
 
 @main
 struct MonkeyGifApp: App {
@@ -15,27 +16,31 @@ struct MonkeyGifApp: App {
     var body: some Scene {
         WindowGroup {
            ContentView()
-                .environment(appDelegate.assemblerWrapper)
+            .environmentObject(appDelegate)
         }
     }
 }
 
-@Observable
-class AppDelegate: NSObject, UIApplicationDelegate, UIEntryPoint {
+class AppDelegate: NSObject, UIApplicationDelegate, ObservableObject, UIEntryPoint {
     
-    var assemblerWrapper: AssembleWrapper?
-    var window: UIWindow?    
+    var assembledApp: AssembledApp?
+    
+    var window: UIWindow?
     
     var rootViewController: UIViewController? {
-        get { nil }
-        set {
-            self.window?.rootViewController = newValue
-            self.window?.makeKeyAndVisible()
+        didSet {
+            window?.rootViewController = rootViewController
+            window?.makeKeyAndVisible()
         }
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        assemblerWrapper = .init(uiEntryPoint: self)
+        self.assembledApp = .init(uiEntryPoint: self, di: buildDI())
+       // self.assembledApp?.startUIKitApp()
         return true
+    }
+    
+    func start() -> some View {
+       assembledApp?.startSwiftUiApp()
     }
 }

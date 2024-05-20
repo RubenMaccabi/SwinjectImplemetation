@@ -8,7 +8,7 @@
 import Foundation
 import Swinject
 
-class InteractorAssembly: Assembly {
+final class InteractorAssembly: Assembly {
     
     func assemble(container: Container) {
         container.register(ApiInteractorProtocol.self) { r in

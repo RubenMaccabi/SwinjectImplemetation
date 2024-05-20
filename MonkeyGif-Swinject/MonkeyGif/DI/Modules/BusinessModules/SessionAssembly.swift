@@ -8,7 +8,7 @@
 import Foundation
 import Swinject
 
-class SessionAssembly: Assembly {
+final class SessionAssembly: Assembly {
     
     func assemble(container: Container) {
         container.register(URLSession.self) { _ in

@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import Swinject
 
-class RootNavigationAssembly: Assembly {
+final class RootNavigationAssembly: Assembly {
     
     func assemble(container: Container) {
         container.register(UINavigationController.self) { _ in

@@ -9,7 +9,7 @@ import Foundation
 import Swinject
 import UIKit
 
-class ControllerAssembly: Assembly {
+final class ControllerAssembly: Assembly {
     
     func assemble(container: Container) {
         container.register(PersistenceController.self) { _ in

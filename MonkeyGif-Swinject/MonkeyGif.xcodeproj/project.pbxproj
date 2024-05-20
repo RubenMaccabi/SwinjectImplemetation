@@ -18,12 +18,8 @@
 		451D39322BF5FE2C0097C55E /* InteractorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39302BF5FE2C0097C55E /* InteractorAssembly.swift */; };
 		451D39342BF5FF0C0097C55E /* AppKeysAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39332BF5FF0C0097C55E /* AppKeysAssembly.swift */; };
 		451D39352BF5FF0C0097C55E /* AppKeysAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39332BF5FF0C0097C55E /* AppKeysAssembly.swift */; };
-		451D393E2BF5FFBC0097C55E /* UIEntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D393D2BF5FFBC0097C55E /* UIEntryPoint.swift */; };
-		451D393F2BF5FFBC0097C55E /* UIEntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D393D2BF5FFBC0097C55E /* UIEntryPoint.swift */; };
 		451D39412BF600A00097C55E /* CoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39402BF600A00097C55E /* CoordinatorAssembly.swift */; };
 		451D39422BF600A00097C55E /* CoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39402BF600A00097C55E /* CoordinatorAssembly.swift */; };
-		451D39442BF603210097C55E /* AssembleWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39432BF603210097C55E /* AssembleWrapper.swift */; };
-		451D39452BF603210097C55E /* AssembleWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39432BF603210097C55E /* AssembleWrapper.swift */; };
 		451D394A2BF6193F0097C55E /* AppViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39492BF6193F0097C55E /* AppViewControllerAssembly.swift */; };
 		451D394B2BF6193F0097C55E /* AppViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39492BF6193F0097C55E /* AppViewControllerAssembly.swift */; };
 		451D394D2BF628350097C55E /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D394C2BF628350097C55E /* ViewControllerFactory.swift */; };
@@ -40,6 +36,8 @@
 		451D39652BF9D2020097C55E /* FavoriteViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39632BF9D2020097C55E /* FavoriteViewControllerAssembly.swift */; };
 		451D39672BF9D7C70097C55E /* RootNavigationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39662BF9D7C70097C55E /* RootNavigationAssembly.swift */; };
 		451D39682BF9D7C70097C55E /* RootNavigationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39662BF9D7C70097C55E /* RootNavigationAssembly.swift */; };
+		45796A932BFA3505006B00D1 /* DIEntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45796A922BFA3505006B00D1 /* DIEntryPoint.swift */; };
+		45EE33522BF9ED7E007EF921 /* DIWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 45EE33512BF9ED7E007EF921 /* DIWrapper */; };
 		8751A1462BAED288009FC688 /* Extension+ URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8751A1452BAED288009FC688 /* Extension+ URLSession.swift */; };
 		8751A1492BAED32F009FC688 /* GetGifByIdMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8751A1482BAED32F009FC688 /* GetGifByIdMock.swift */; };
 		8751A14B2BAED36E009FC688 /* TrendingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8751A14A2BAED36E009FC688 /* TrendingMock.swift */; };
@@ -140,9 +138,7 @@
 		451D392D2BF5FD4F0097C55E /* RepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
 		451D39302BF5FE2C0097C55E /* InteractorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorAssembly.swift; sourceTree = "<group>"; };
 		451D39332BF5FF0C0097C55E /* AppKeysAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeysAssembly.swift; sourceTree = "<group>"; };
-		451D393D2BF5FFBC0097C55E /* UIEntryPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEntryPoint.swift; sourceTree = "<group>"; };
 		451D39402BF600A00097C55E /* CoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorAssembly.swift; sourceTree = "<group>"; };
-		451D39432BF603210097C55E /* AssembleWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssembleWrapper.swift; sourceTree = "<group>"; };
 		451D39492BF6193F0097C55E /* AppViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewControllerAssembly.swift; sourceTree = "<group>"; };
 		451D394C2BF628350097C55E /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		451D39502BF632150097C55E /* ViewControllerFactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryAssembly.swift; sourceTree = "<group>"; };
@@ -151,6 +147,7 @@
 		451D395A2BF63C820097C55E /* ViewModelsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelsAssembly.swift; sourceTree = "<group>"; };
 		451D39632BF9D2020097C55E /* FavoriteViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerAssembly.swift; sourceTree = "<group>"; };
 		451D39662BF9D7C70097C55E /* RootNavigationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationAssembly.swift; sourceTree = "<group>"; };
+		45796A922BFA3505006B00D1 /* DIEntryPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIEntryPoint.swift; sourceTree = "<group>"; };
 		8751A1452BAED288009FC688 /* Extension+ URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ URLSession.swift"; sourceTree = "<group>"; };
 		8751A1482BAED32F009FC688 /* GetGifByIdMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGifByIdMock.swift; sourceTree = "<group>"; };
 		8751A14A2BAED36E009FC688 /* TrendingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMock.swift; sourceTree = "<group>"; };
@@ -233,6 +230,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45EE33522BF9ED7E007EF921 /* DIWrapper in Frameworks */,
 				87F82AB82BAB2F44006C7D06 /* SwiftyGif.xcframework in Frameworks */,
 				451D39282BF5FB9F0097C55E /* Swinject in Frameworks */,
 			);
@@ -246,7 +244,7 @@
 			children = (
 				451D39612BF9CBE20097C55E /* Modules */,
 				451D394F2BF631FC0097C55E /* Factories */,
-				451D39432BF603210097C55E /* AssembleWrapper.swift */,
+				45796A922BFA3505006B00D1 /* DIEntryPoint.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -274,7 +272,6 @@
 			isa = PBXGroup;
 			children = (
 				451D39622BF9CC770097C55E /* ViewControllers */,
-				451D393D2BF5FFBC0097C55E /* UIEntryPoint.swift */,
 				451D39402BF600A00097C55E /* CoordinatorAssembly.swift */,
 				451D39662BF9D7C70097C55E /* RootNavigationAssembly.swift */,
 			);
@@ -648,6 +645,7 @@
 			name = MonkeyGif;
 			packageProductDependencies = (
 				451D39272BF5FB9F0097C55E /* Swinject */,
+				45EE33512BF9ED7E007EF921 /* DIWrapper */,
 			);
 			productName = MonkeyGif;
 			productReference = 87F82A412BA9B83A006C7D06 /* MonkeyGif.app */;
@@ -684,6 +682,7 @@
 			packageReferences = (
 				8751A1552BAFF6E2009FC688 /* XCLocalSwiftPackageReference "swift-async-algorithms-1.0.0" */,
 				451D39232BF5F8CB0097C55E /* XCRemoteSwiftPackageReference "Swinject" */,
+				45EE33502BF9ED65007EF921 /* XCLocalSwiftPackageReference "../../../Packages/DIWrapper" */,
 			);
 			productRefGroup = 87F82A422BA9B83A006C7D06 /* Products */;
 			projectDirPath = "";
@@ -737,13 +736,11 @@
 				451D39522BF632150097C55E /* ViewControllerFactoryAssembly.swift in Sources */,
 				451D392B2BF5FC570097C55E /* ControllerAssembly.swift in Sources */,
 				451D394B2BF6193F0097C55E /* AppViewControllerAssembly.swift in Sources */,
-				451D39452BF603210097C55E /* AssembleWrapper.swift in Sources */,
 				451D39352BF5FF0C0097C55E /* AppKeysAssembly.swift in Sources */,
 				451D392C2BF5FC5A0097C55E /* SessionAssembly.swift in Sources */,
 				451D39682BF9D7C70097C55E /* RootNavigationAssembly.swift in Sources */,
 				451D39422BF600A00097C55E /* CoordinatorAssembly.swift in Sources */,
 				451D392F2BF5FD4F0097C55E /* RepositoryAssembly.swift in Sources */,
-				451D393F2BF5FFBC0097C55E /* UIEntryPoint.swift in Sources */,
 				451D39652BF9D2020097C55E /* FavoriteViewControllerAssembly.swift in Sources */,
 				451D394E2BF628350097C55E /* ViewControllerFactory.swift in Sources */,
 			);
@@ -767,13 +764,13 @@
 				8751A14D2BAED3B2009FC688 /* SearchMock.swift in Sources */,
 				451D39342BF5FF0C0097C55E /* AppKeysAssembly.swift in Sources */,
 				8751A19B2BB2BA07009FC688 /* AppViewControllerCoordinator.swift in Sources */,
+				45796A932BFA3505006B00D1 /* DIEntryPoint.swift in Sources */,
 				87F82A992BAAD618006C7D06 /* Extension+UIView.swift in Sources */,
 				879A801E2BADA3E10057724D /* Extension+UIViewController.swift in Sources */,
 				8751A1462BAED288009FC688 /* Extension+ URLSession.swift in Sources */,
 				87F82A642BA9BBBE006C7D06 /* TrendingApi.swift in Sources */,
 				8751A1942BB2AFFA009FC688 /* Datum.swift in Sources */,
 				87F82A5D2BA9B8B0006C7D06 /* AppViewController.swift in Sources */,
-				451D393E2BF5FFBC0097C55E /* UIEntryPoint.swift in Sources */,
 				87F82A932BAAC8AD006C7D06 /* GifViewCell.swift in Sources */,
 				451D39672BF9D7C70097C55E /* RootNavigationAssembly.swift in Sources */,
 				451D39262BF5FB7D0097C55E /* ControllerAssembly.swift in Sources */,
@@ -787,7 +784,6 @@
 				87C0F6E72BAC50B9002D54F9 /* PlistDecodable.swift in Sources */,
 				87F82A6F2BA9C4D2006C7D06 /* ApiWorkerProtocol.swift in Sources */,
 				87F82ABE2BAB3925006C7D06 /* DecoratorProtocol.swift in Sources */,
-				451D39442BF603210097C55E /* AssembleWrapper.swift in Sources */,
 				87C0F6EC2BAC6544002D54F9 /* GifController.swift in Sources */,
 				87F82A452BA9B83A006C7D06 /* MonkeyGifApp.swift in Sources */,
 				87F82A4C2BA9B83A006C7D06 /* ContentView.swift in Sources */,
@@ -980,7 +976,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MonkeyGif/Preview Content\"";
-				DEVELOPMENT_TEAM = STFH26U9BW;
+				DEVELOPMENT_TEAM = KG32WM7QU5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -995,16 +991,17 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.MonkeyGif;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.monkeygif.swinject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1107,7 +1104,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MonkeyGif/Preview Content\"";
-				DEVELOPMENT_TEAM = STFH26U9BW;
+				DEVELOPMENT_TEAM = KG32WM7QU5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1122,16 +1119,17 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.MonkeyGif;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.monkeygif.swinject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1265,7 +1263,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MonkeyGif/Preview Content\"";
-				DEVELOPMENT_TEAM = STFH26U9BW;
+				DEVELOPMENT_TEAM = KG32WM7QU5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1280,16 +1278,17 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.MonkeyGif;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.monkeygif.swinject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1306,7 +1305,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MonkeyGif/Preview Content\"";
-				DEVELOPMENT_TEAM = STFH26U9BW;
+				DEVELOPMENT_TEAM = KG32WM7QU5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1321,15 +1320,16 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.MonkeyGif;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.monkeygif.swinject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1375,6 +1375,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
+		45EE33502BF9ED65007EF921 /* XCLocalSwiftPackageReference "../../../Packages/DIWrapper" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../../Packages/DIWrapper;
+		};
 		8751A1552BAFF6E2009FC688 /* XCLocalSwiftPackageReference "swift-async-algorithms-1.0.0" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = "swift-async-algorithms-1.0.0";
@@ -1397,6 +1401,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 451D39232BF5F8CB0097C55E /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
+		};
+		45EE33512BF9ED7E007EF921 /* DIWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45EE33502BF9ED65007EF921 /* XCLocalSwiftPackageReference "../../../Packages/DIWrapper" */;
+			productName = DIWrapper;
 		};
 /* End XCSwiftPackageProductDependency section */
 

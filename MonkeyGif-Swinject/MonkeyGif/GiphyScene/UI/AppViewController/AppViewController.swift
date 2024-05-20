@@ -37,7 +37,8 @@ final class AppViewController: UIViewController, UISearchResultsUpdating, ViewCo
         self.viewModel = viewModel
         self.coordinator = coordinator
         self.subscriptions = .init()
-        super.init(nibName: String(describing: Self.self), bundle: .main)
+        super.init(nibName: String(describing: Self.self), bundle: .main
+        )
     }
     
     required init?(coder: NSCoder) {

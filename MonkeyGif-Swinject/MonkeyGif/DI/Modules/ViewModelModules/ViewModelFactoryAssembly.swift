@@ -8,7 +8,7 @@
 import Foundation
 import Swinject
 
-class ViewModelFactoryAssembly: Assembly {
+final class ViewModelFactoryAssembly: Assembly {
     
     func assemble(container: Container) {
         container.register(ViewModelFactory.self) { r in

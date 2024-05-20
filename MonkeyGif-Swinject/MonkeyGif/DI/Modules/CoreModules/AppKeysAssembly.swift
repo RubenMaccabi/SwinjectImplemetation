@@ -8,7 +8,7 @@
 import Foundation
 import Swinject
 
-class AppKeysAssembly: Assembly {
+final class AppKeysAssembly: Assembly {
     
     func assemble(container: Container) {
         container.register(AppKeys.self) { _ in

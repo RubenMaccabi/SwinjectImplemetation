@@ -8,7 +8,7 @@
 import Foundation
 import Swinject
 
-class AppViewControllerAssembly: Assembly {
+final class AppViewControllerAssembly: Assembly {
 
     func assemble(container: Container) {
         
@@ -24,5 +24,6 @@ class AppViewControllerAssembly: Assembly {
             let coordinator = r.resolve(AppViewController.Coordinator.self)
             return AppViewController(viewModel: vm!, coordinator: coordinator!)
         }
+        .inObjectScope(.graph)
     }
 }
