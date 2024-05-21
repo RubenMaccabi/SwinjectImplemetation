@@ -12,24 +12,26 @@ func buildDI() -> DiBuilder {
     let di: DI = .init()
     return di
     // MARK: - Core
-        .add(RootNavigationAssembly())
-        .add(SessionAssembly())
-        .add(AppKeysAssembly())
+        .add(rootContainer)
+        .add(sessionContainer)
+        .add(appkeysContainer)
     // MARK: - Factories
-        .add(ViewModelFactoryAssembly())
-        .add(ViewControllerFactoryAssembly())
+        .add(viewModelFactoryContainer)
+        .add(viewControllerFactoryContainer)
     // MARK: - ViewModels
-        .add(ViewModelsAssembly())
+        .add(appViewModelContainer)
+        .add(favoriteViewModelContainer)
     // MARK: - ViewControllers
-        .add(AppViewControllerAssembly())
-        .add(FavoriteViewControllerAssembly())
+        .add(appViewControllerContainer)
+        .add(favoriteViewControllerContainer)
     // MARK: - Businness
-        .add(AppViewControllerAssembly())
-        .add(InteractorAssembly())
-        .add(RepositoryAssembly())
-        .add(ControllerAssembly())
+        .add(interactorContainer)
+        .add(repositoryContainer)
+        .add(persistenceControllerContainer)
+        .add(gifControllerContainer)
     // MARK: - Routes
-        .add(CoordinatorAssembly())
+        .add(favoriteCoordinatorContainer)
+        .add(appCoordinatorContainer)
         .makeAssembler { di in
             let coordinator = di.resolve(GiphySceneCoordinator.self, name: AppViewController.name)
             coordinator.start()

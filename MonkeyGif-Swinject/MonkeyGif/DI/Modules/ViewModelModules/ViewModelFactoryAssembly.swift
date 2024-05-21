@@ -6,14 +6,8 @@
 //
 
 import Foundation
-import Swinject
+import DIWrapper
 
-final class ViewModelFactoryAssembly: Assembly {
-    
-    func assemble(container: Container) {
-        container.register(ViewModelFactory.self) { r in
-            ViewModelFactoryImpl()
-        }
-        .inObjectScope(.container)
-    }
+var viewModelFactoryContainer = AssemblyContainer(scope: .container, type: ViewModelFactory.self) { _ in
+    ViewModelFactoryImpl()
 }

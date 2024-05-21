@@ -6,16 +6,9 @@
 //
 
 import Foundation
-import Swinject
+import DIWrapper
 
-final class InteractorAssembly: Assembly {
-    
-    func assemble(container: Container) {
-        container.register(ApiInteractorProtocol.self) { r in
-            let repository = r.resolve(GifRepositoryProtocol.self)
-            assert(repository != nil, "ApiInteractorProtocol not injected")
-            return ApiInteractor(repository: repository!)
-        }
-        .inObjectScope(.weak)
-    }
+var interactorContainer = AssemblyContainer(scope: .weak, type: ApiInteractorProtocol.self) { r in
+    let repository = r.resolving(GifRepositoryProtocol.self)
+    return ApiInteractor(repository: repository)
 }

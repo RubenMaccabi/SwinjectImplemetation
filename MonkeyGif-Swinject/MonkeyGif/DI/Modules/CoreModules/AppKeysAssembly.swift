@@ -5,17 +5,10 @@
 //  Created by Ruben  on 16/05/2024.
 //
 
-import Foundation
-import Swinject
+import DIWrapper
 
-final class AppKeysAssembly: Assembly {
-    
-    func assemble(container: Container) {
-        container.register(AppKeys.self) { _ in
-            let reader = PlistReader(keyList: .appKeys)
-            let appKeys: AppKeys = reader.read()
-            return appKeys
-        }
-        .inObjectScope(.container)
-    }
+var appkeysContainer = AssemblyContainer(scope: .container) { _ in
+    let reader = PlistReader(keyList: .appKeys)
+    let appKeys: AppKeys = reader.read()
+    return appKeys
 }

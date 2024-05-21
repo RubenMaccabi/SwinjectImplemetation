@@ -6,14 +6,8 @@
 //
 
 import Foundation
-import Swinject
+import DIWrapper
 
-class ViewControllerFactoryAssembly: Assembly {
-    
-    func assemble(container: Container) {
-        container.register(ViewControllerFactory.self) { _ in
-            ViewControllerFactoryImpl()
-        }
-        .inObjectScope(.container)
-    }
+var viewControllerFactoryContainer = AssemblyContainer(scope: .container, type: ViewControllerFactory.self) { _ in
+    ViewControllerFactoryImpl()
 }

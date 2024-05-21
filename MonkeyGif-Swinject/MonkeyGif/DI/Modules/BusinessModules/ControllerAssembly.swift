@@ -6,20 +6,12 @@
 //
 
 import Foundation
-import Swinject
-import UIKit
+import DIWrapper
 
-final class ControllerAssembly: Assembly {
-    
-    func assemble(container: Container) {
-        container.register(PersistenceController.self) { _ in
-            PersistenceController.shared
-        }
-        .inObjectScope(.container)
-        
-        container.register(GifControllerProtocol.self) { r in
-            GifController(controller: r.resolve(PersistenceController.self)!)
-        }
-        .inObjectScope(.weak)
-    }
+var persistenceControllerContainer = AssemblyContainer(scope: .container) { r in
+    PersistenceController.shared
+}
+
+var gifControllerContainer = AssemblyContainer(scope: .weak, type: GifControllerProtocol.self) { r in
+    GifController(controller: r.resolving(PersistenceController.self))
 }

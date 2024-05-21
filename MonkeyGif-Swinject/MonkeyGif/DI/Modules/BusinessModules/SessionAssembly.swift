@@ -6,14 +6,8 @@
 //
 
 import Foundation
-import Swinject
+import DIWrapper
 
-final class SessionAssembly: Assembly {
-    
-    func assemble(container: Container) {
-        container.register(URLSession.self) { _ in
-                .envSession
-        }
-        .inObjectScope(.container)
-    }
+var sessionContainer = AssemblyContainer(scope: .container) { _ in
+    URLSession.envSession
 }
