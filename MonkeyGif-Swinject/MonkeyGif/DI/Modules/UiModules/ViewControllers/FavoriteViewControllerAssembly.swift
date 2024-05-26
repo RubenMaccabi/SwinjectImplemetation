@@ -8,7 +8,7 @@
 import Foundation
 import DIWrapper
 
-var favoriteViewControllerContainer = AssemblyContainer(scope: .graph) { r in
+let favoriteViewControllerContainer = AssemblyContainer(scope: .graph) { r in
     let vm = r.resolving(FetchingVM.self, name: FavoriteViewController.name) as? FavoriteViewController.ViewModel
     assert(vm != nil,"\(FavoriteViewController.ViewModel.self) is not injected" )
     let coordinator = r.resolving(GiphySceneCoordinator.self, name: FavoriteViewController.name) as? FavoriteViewController.Coordinator

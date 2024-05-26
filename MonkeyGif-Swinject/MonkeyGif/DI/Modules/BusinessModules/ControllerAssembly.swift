@@ -8,10 +8,10 @@
 import Foundation
 import DIWrapper
 
-var persistenceControllerContainer = AssemblyContainer(scope: .container) { r in
+let persistenceControllerContainer = AssemblyContainer(scope: .container) { r in
     PersistenceController.shared
 }
 
-var gifControllerContainer = AssemblyContainer(scope: .weak, type: GifControllerProtocol.self) { r in
+let gifControllerContainer = AssemblyContainer(scope: .weak, type: GifControllerProtocol.self) { r in
     GifController(controller: r.resolving(PersistenceController.self))
 }

@@ -8,6 +8,6 @@
 import Foundation
 import DIWrapper
 
-var viewControllerFactoryContainer = AssemblyContainer(scope: .container, type: ViewControllerFactory.self) { _ in
+let viewControllerFactoryContainer = AssemblyContainer(scope: .container, type: ViewControllerFactory.self) { _ in
     ViewControllerFactoryImpl()
 }

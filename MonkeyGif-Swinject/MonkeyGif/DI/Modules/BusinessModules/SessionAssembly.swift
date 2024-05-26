@@ -8,6 +8,6 @@
 import Foundation
 import DIWrapper
 
-var sessionContainer = AssemblyContainer(scope: .container) { _ in
+let sessionContainer = AssemblyContainer(scope: .container) { _ in
     URLSession.envSession
 }

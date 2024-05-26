@@ -8,7 +8,7 @@
 import Foundation
 import DIWrapper
 
-var appViewControllerContainer = AssemblyContainer(scope: .graph) { r in
+let appViewControllerContainer = AssemblyContainer(scope: .graph) { r in
     let vm = r.resolving(FetchingVM.self, name: AppViewController.name) as? AppViewController.ViewModel
     assert(vm != nil,"\(AppViewController.ViewModel.self) is not injected" )
     let coordinator = r.resolving(GiphySceneCoordinator.self, name: AppViewController.name) as? AppViewController.Coordinator

@@ -8,7 +8,7 @@
 import Foundation
 import DIWrapper
 
-var interactorContainer = AssemblyContainer(scope: .weak, type: ApiInteractorProtocol.self) { r in
+let interactorContainer = AssemblyContainer(scope: .weak, type: ApiInteractorProtocol.self) { r in
     let repository = r.resolving(GifRepositoryProtocol.self)
     return ApiInteractor(repository: repository)
 }

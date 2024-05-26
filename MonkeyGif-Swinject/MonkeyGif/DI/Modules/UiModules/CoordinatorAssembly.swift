@@ -9,7 +9,7 @@ import Foundation
 import DIWrapper
 import UIKit
 
-var favoriteCoordinatorContainer = AssemblyContainer(scope: .weak, name: FavoriteViewController.name, type: GiphySceneCoordinator.self) { r in
+let favoriteCoordinatorContainer = AssemblyContainer(scope: .weak, name: FavoriteViewController.name, type: GiphySceneCoordinator.self) { r in
     let root = r.resolving(UINavigationController.self)
     let favoriteVM = r.resolving((any FetchingViewModelProtocol).self, name: FavoriteViewController.name) as? FavoriteViewController.ViewModel
     assert(favoriteVM != nil, "\(FavoriteViewController.ViewModel.self) not injected" )
@@ -19,7 +19,7 @@ var favoriteCoordinatorContainer = AssemblyContainer(scope: .weak, name: Favorit
     coordinator.viewController = vc
 }
 
-var appCoordinatorContainer = AssemblyContainer(scope: .weak, name:  AppViewController.name, type: GiphySceneCoordinator.self) { r in
+let appCoordinatorContainer = AssemblyContainer(scope: .weak, name:  AppViewController.name, type: GiphySceneCoordinator.self) { r in
     let appKeys = r.resolving(AppKeys.self)
     let interactor = r.resolving(ApiInteractorProtocol.self)
     let factory = r.resolving(ViewControllerFactory.self)

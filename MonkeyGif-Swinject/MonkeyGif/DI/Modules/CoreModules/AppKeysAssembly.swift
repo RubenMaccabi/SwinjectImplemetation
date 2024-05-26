@@ -7,7 +7,7 @@
 
 import DIWrapper
 
-var appkeysContainer = AssemblyContainer(scope: .container) { _ in
+let appkeysContainer = AssemblyContainer(scope: .container) { _ in
     let reader = PlistReader(keyList: .appKeys)
     let appKeys: AppKeys = reader.read()
     return appKeys

@@ -8,6 +8,6 @@
 import Foundation
 import DIWrapper
 
-var viewModelFactoryContainer = AssemblyContainer(scope: .container, type: ViewModelFactory.self) { _ in
+let viewModelFactoryContainer = AssemblyContainer(scope: .container, type: ViewModelFactory.self) { _ in
     ViewModelFactoryImpl()
 }
