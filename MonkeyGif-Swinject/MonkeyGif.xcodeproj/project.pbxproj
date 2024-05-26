@@ -36,8 +36,9 @@
 		451D39652BF9D2020097C55E /* FavoriteViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39632BF9D2020097C55E /* FavoriteViewControllerAssembly.swift */; };
 		451D39672BF9D7C70097C55E /* RootNavigationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39662BF9D7C70097C55E /* RootNavigationAssembly.swift */; };
 		451D39682BF9D7C70097C55E /* RootNavigationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D39662BF9D7C70097C55E /* RootNavigationAssembly.swift */; };
+		455515332C0330F700A1613E /* DIWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 455515322C0330F700A1613E /* DIWrapper */; };
+		455515352C03310800A1613E /* DIWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 455515342C03310800A1613E /* DIWrapper */; };
 		45796A932BFA3505006B00D1 /* DIEntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45796A922BFA3505006B00D1 /* DIEntryPoint.swift */; };
-		45EE33522BF9ED7E007EF921 /* DIWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 45EE33512BF9ED7E007EF921 /* DIWrapper */; };
 		8751A1462BAED288009FC688 /* Extension+ URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8751A1452BAED288009FC688 /* Extension+ URLSession.swift */; };
 		8751A1492BAED32F009FC688 /* GetGifByIdMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8751A1482BAED32F009FC688 /* GetGifByIdMock.swift */; };
 		8751A14B2BAED36E009FC688 /* TrendingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8751A14A2BAED36E009FC688 /* TrendingMock.swift */; };
@@ -223,6 +224,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455515352C03310800A1613E /* DIWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +232,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45EE33522BF9ED7E007EF921 /* DIWrapper in Frameworks */,
+				455515332C0330F700A1613E /* DIWrapper in Frameworks */,
 				87F82AB82BAB2F44006C7D06 /* SwiftyGif.xcframework in Frameworks */,
 				451D39282BF5FB9F0097C55E /* Swinject in Frameworks */,
 			);
@@ -625,6 +627,9 @@
 				879A802B2BADD2950057724D /* PBXTargetDependency */,
 			);
 			name = MonkeyGifTests;
+			packageProductDependencies = (
+				455515342C03310800A1613E /* DIWrapper */,
+			);
 			productName = MonkeyGifTests;
 			productReference = 879A80262BADD2950057724D /* MonkeyGifTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -645,7 +650,7 @@
 			name = MonkeyGif;
 			packageProductDependencies = (
 				451D39272BF5FB9F0097C55E /* Swinject */,
-				45EE33512BF9ED7E007EF921 /* DIWrapper */,
+				455515322C0330F700A1613E /* DIWrapper */,
 			);
 			productName = MonkeyGif;
 			productReference = 87F82A412BA9B83A006C7D06 /* MonkeyGif.app */;
@@ -682,7 +687,7 @@
 			packageReferences = (
 				8751A1552BAFF6E2009FC688 /* XCLocalSwiftPackageReference "swift-async-algorithms-1.0.0" */,
 				451D39232BF5F8CB0097C55E /* XCRemoteSwiftPackageReference "Swinject" */,
-				45EE33502BF9ED65007EF921 /* XCLocalSwiftPackageReference "../../../Packages/DIWrapper" */,
+				455515312C0330F700A1613E /* XCLocalSwiftPackageReference "../DIWrapper" */,
 			);
 			productRefGroup = 87F82A422BA9B83A006C7D06 /* Products */;
 			projectDirPath = "";
@@ -1375,9 +1380,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		45EE33502BF9ED65007EF921 /* XCLocalSwiftPackageReference "../../../Packages/DIWrapper" */ = {
+		455515312C0330F700A1613E /* XCLocalSwiftPackageReference "../DIWrapper" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../../Packages/DIWrapper;
+			relativePath = ../DIWrapper;
 		};
 		8751A1552BAFF6E2009FC688 /* XCLocalSwiftPackageReference "swift-async-algorithms-1.0.0" */ = {
 			isa = XCLocalSwiftPackageReference;
@@ -1402,9 +1407,13 @@
 			package = 451D39232BF5F8CB0097C55E /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
 		};
-		45EE33512BF9ED7E007EF921 /* DIWrapper */ = {
+		455515322C0330F700A1613E /* DIWrapper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 45EE33502BF9ED65007EF921 /* XCLocalSwiftPackageReference "../../../Packages/DIWrapper" */;
+			productName = DIWrapper;
+		};
+		455515342C03310800A1613E /* DIWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 455515312C0330F700A1613E /* XCLocalSwiftPackageReference "../DIWrapper" */;
 			productName = DIWrapper;
 		};
 /* End XCSwiftPackageProductDependency section */

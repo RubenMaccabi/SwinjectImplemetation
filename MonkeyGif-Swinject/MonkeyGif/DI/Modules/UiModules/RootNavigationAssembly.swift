@@ -10,16 +10,6 @@ import UIKit
 import Swinject
 import DIWrapper
 
-//final class RootNavigationAssembly: Assembly {
-//    
-//    func assemble(container: Container) {
-//        container.register(UINavigationController.self) { _ in
-//            .init()
-//        }
-//        .inObjectScope(.container)
-//    }
-//}
-
 let rootContainer = AssemblyContainer(scope: .container) { _ in
     UINavigationController()
 }

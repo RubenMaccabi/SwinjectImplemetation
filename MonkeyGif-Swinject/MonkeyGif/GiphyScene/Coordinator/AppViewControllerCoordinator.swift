@@ -15,7 +15,7 @@ class AppViewControllerCoordinator: GiphySceneCoordinator {
     let navigationController: UINavigationController
     let appKeys: AppKeys
     let apiInteractor: ApiInteractorProtocol
-    var viewController: UIViewController!
+    weak var viewController: UIViewController!
     
     init(navigationController: UINavigationController,
          appKeys: AppKeys,

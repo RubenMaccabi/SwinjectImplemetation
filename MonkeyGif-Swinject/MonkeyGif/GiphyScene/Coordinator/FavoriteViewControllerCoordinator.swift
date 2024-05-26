@@ -13,7 +13,7 @@ class FavoriteViewControllerCoordinator: GiphySceneCoordinator {
     var children: [any GiphySceneCoordinator]
     internal let navigationController: UINavigationController
     private let favoriteVM: FavoriteViewController.ViewModel
-    var viewController: UIViewController!
+    weak var viewController: UIViewController!
     
     init(navigationController: UINavigationController, favoriteVM: FavoriteViewController.ViewModel) {
         self.navigationController = navigationController
