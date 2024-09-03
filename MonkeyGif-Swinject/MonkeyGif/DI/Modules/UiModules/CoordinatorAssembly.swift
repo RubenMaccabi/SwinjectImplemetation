@@ -19,7 +19,7 @@ let favoriteCoordinatorContainer = AssemblyContainer(scope: .weak, name: Favorit
     coordinator.viewController = vc
 }
 
-let appCoordinatorContainer = AssemblyContainer(scope: .weak, name:  AppViewController.name, type: GiphySceneCoordinator.self) { r in
+let appCoordinatorContainer = AssemblyContainer(scope: .weak, name: AppViewController.name, type: GiphySceneCoordinator.self) { r in
     let appKeys = r.resolving(AppKeys.self)
     let interactor = r.resolving(ApiInteractorProtocol.self)
     let factory = r.resolving(ViewControllerFactory.self)
@@ -34,6 +34,6 @@ let appCoordinatorContainer = AssemblyContainer(scope: .weak, name:  AppViewCont
     )
     return appCoordinator
 } circularDependency: { r, coordinator in
-    let vc = r.resolving(AppViewController.self)
+    let vc = r.resolving(AppViewController.self, name: AppViewController.name)
     coordinator.viewController = vc
 }
