@@ -20,6 +20,7 @@ struct ContentView: View {
     }
 }
 
+
 #Preview {
     @UIApplicationDelegateAdaptor var appDelegate: AppDelegate
     return ContentView()

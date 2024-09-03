@@ -15,12 +15,6 @@ public class AssembledApp: ObservableObject {
     private var diBuilder: DiBuilder
     private let uiEntryPoint: UIEntryPoint
     
-    public var window: UIWindow {
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        window.backgroundColor = UIColor.red
-        return window
-    }
-    
     /// Initializer of the EntryPoint of the Di Flow
     /// - Parameters:
     ///   - uiEntryPoint: Implements UIEntryPoint protocol, recommended to be the AppDelegate
@@ -28,7 +22,6 @@ public class AssembledApp: ObservableObject {
     public init(uiEntryPoint: UIEntryPoint, di: DiBuilder) {
         self.uiEntryPoint = uiEntryPoint
         self.diBuilder = di
-        self.uiEntryPoint.window = window
         self.diBuilder.build()
     }
     
