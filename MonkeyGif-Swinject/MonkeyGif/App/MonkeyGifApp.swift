@@ -61,6 +61,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UISceneDelegate, ObservableO
             self.rootViewController = UIHostingController(rootView: view)
         } else {
             self.assembledApp?.startUIKitApp()
+            self.rootViewController?.overrideUserInterfaceStyle = .dark
         }
     }
     
